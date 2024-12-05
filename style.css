@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  /* Resume Container */
+  .resume {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Header Section */
+  header {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 5px;
+   
+  }
+  
+  header h1 span {
+    font-weight: 700;
+   
+  }
+  
+  header h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  /* Content Columns */
+  .content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .left-column{
+    flex:1;
+    border-right:1px solid #ccc;
+    padding-right:20px;
+  }
+  .right-column {
+    flex:2;
+    padding-left:20px;
+  }
+  
+  .left-column h3,
+  .right-column h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .left-column p,
+  .right-column p {
+    margin: 5px 0;
+  }
+  
+  .right-column ul {
+    margin: 10px 0 0 20px;
+    padding-left: 0;
+  }
+  
+  .right-column ul li {
+    list-style: disc;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: #007acc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive styling for screens smaller than 768px (Tablets, Phones) */
+@media (max-width: 768px) {
+    .content {
+      flex-direction: column; /* Stack columns vertically */
+      gap: 0; /* Remove the gap between the stacked sections */
+    }
+  
+    .left-column,
+    .right-column {
+      border-right: none; /* Remove the border when stacking */
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    .right-column {
+      margin-top: 20px; /* Add spacing between the stacked columns */
+    }
+  }
